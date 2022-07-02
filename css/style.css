@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+}
+
+section .row input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 0;
+  color: #fff;
+  font-weight: 800;
+}
+.form-control:focus {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 0;
+}
+
+/* Start Movie */
+.movie .layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  color: #000;
+  transition: all 1s;
+}
+.movie:hover .layer {
+  top: 0;
+}
+
+.img-movie {
+  height: 400px;
+}
+/* nav bar */
+.navbar {
+  width: 300px;
+  background-color: #000;
+  display: grid;
+  grid-template-columns: 1fr 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 9999;
+  padding: 0;
+  transition: transform 0.3s linear;
+}
+
+.aside_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: 2rem;
+}
+.nav_list{
+ overflow: hidden;
+}
+.nav_list .list_item {
+  color: #fff;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  transition-delay: 0.5s;
+}
+.nav_list .list_item:hover{
+  color: #ff655c;
+}
+.aside_right {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.logo {
+  width: 30px;
+}
+
+.navbar.hide-nav {
+  transform: translateX(-230px);
+}
+
+.navbar.hide-nav .nav_list .list_item {
+  transform: translateY(400px);
+
+}
+
+.toggle {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+.copyright-icon{
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.copyright-icon i{
+  color: #fff;
+  padding-inline:10px ;
+  cursor: pointer;
+  transition: all .3s linear;
+}
+.copyright-icon i:hover{
+  color: #ff655c ;
+}
+.contact i{
+  color: rgb(33, 37, 41);
+}
